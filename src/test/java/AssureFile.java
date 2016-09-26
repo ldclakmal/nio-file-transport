@@ -1,5 +1,3 @@
-package nio.test;
-
 import org.apache.commons.collections.CollectionUtils;
 
 import java.io.File;

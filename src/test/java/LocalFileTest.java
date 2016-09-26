@@ -1,5 +1,3 @@
-package nio.test;
-
 import nio.Notifier;
 import nio.Pattern;
 import nio.sample.Sample;

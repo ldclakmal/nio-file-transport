@@ -1,5 +1,3 @@
-package nio.test;
-
 import nio.util.FileOperations;
 
 import java.io.IOException;
