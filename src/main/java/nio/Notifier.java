@@ -1,7 +1,7 @@
 package nio;
 
-import org.adroitlogic.logging.api.Logger;
-import org.adroitlogic.logging.api.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -33,7 +33,7 @@ public class Notifier implements Runnable {
     private Set<Path> fileList;
     private ExecutorService executorService;
     private PathMatcher fileNameMatcher;
-    private static final Logger logger = LoggerFactory.getLogger(Notifier.class);
+    private static final Logger logger =  LogManager.getLogger(Notifier.class);
 
     /**
      * Creates a WatchService and registers the given directory

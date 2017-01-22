@@ -1,7 +1,7 @@
 package transport;
 
-import org.adroitlogic.logging.api.Logger;
-import org.adroitlogic.logging.api.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -32,7 +32,7 @@ import static java.nio.file.StandardWatchEventKinds.*;
 @SuppressWarnings("WeakerAccess")
 public class FilePublisher extends AbstractPathMatcher implements Runnable {
 
-    private static final Logger logger = LoggerFactory.getLogger(FilePublisher.class);
+    private static final Logger logger = LogManager.getLogger(FilePublisher.class);
 
     private ExecutorService executorService;
     private WatchService watcher;

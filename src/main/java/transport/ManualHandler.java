@@ -1,7 +1,7 @@
 package transport;
 
-import org.adroitlogic.logging.api.Logger;
-import org.adroitlogic.logging.api.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;
@@ -24,7 +24,7 @@ import java.util.concurrent.Callable;
 @SuppressWarnings("WeakerAccess")
 public class ManualHandler extends AbstractPathMatcher implements Callable<Object> {
 
-    private static final Logger logger =  LoggerFactory.getLogger(ManualHandler.class);
+    private static final Logger logger =  LogManager.getLogger(ManualHandler.class);
 
     private HashMap<GRPattern, HashMap<String, Object>> patternMap;
     private long time;

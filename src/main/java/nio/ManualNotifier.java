@@ -1,7 +1,7 @@
 package nio;
 
-import org.adroitlogic.logging.api.Logger;
-import org.adroitlogic.logging.api.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.nio.file.*;
@@ -27,7 +27,7 @@ public class ManualNotifier implements Callable<Object> {
     private Pair<Long, Long> timePair;
     private PathMatcher fileNameMatcher;
     private final int THRESHOLD = 1250;
-    private static final Logger logger = LoggerFactory.getLogger(ManualNotifier.class);
+    private static final Logger logger = LogManager.getLogger(ManualNotifier.class);
 
     /**
      * This constructor calls when an directory get registered
