@@ -1,4 +1,4 @@
-# NIOFileTransport
+# NIO File Transport
 
 This project is about to create an event based (non-polling) file transport. In a polling file transport the files are being detected by polling a directory or set of directories using a given time of interval in milliseconds or seconds. Even though there are no files in those directories this scans for the files periodically. This is an overhead and inefficient use of system resources. So, the event based file transport acts as a non-polling transport which will trigger an event if and only if there is a file or a directory is created.
 
