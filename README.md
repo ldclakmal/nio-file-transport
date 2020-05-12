@@ -4,4 +4,6 @@ This project is about to create an event based (non-polling) file transport. In 
 
 The JDK 7 provided a special package called java.nio. Java NIO (New IO) is an alternative IO API for Java (from Java 1.4), meaning alternative to the standard Java IO and Java Networking API’s. Java NIO offers a different way of working with IO than the standard IO API’s. This package provided a package called `java.nio.file` and it has a file change notification API, called the `WatchService API`. This API enables to register a directory (or directories) with the watch service. When registering, we tell the service which types of events we are interested in: file creation, file deletion, or file modification. When the service detects an event of interest, it is forwarded to the registered process. The registered process has a thread (or a pool of threads) dedicated to watching for any events it has registered for. When an event comes in, it is handled as needed.
 
-More info: https://medium.com/@ldclakmal/event-based-non-polling-file-transport-a140265c73ce
+More info: https://medium.com/@ldclakmal/nio-file-transport-c0811cb0369b
+
+Usecase: https://developer.adroitlogic.com/connectors/docs/17.07/nio_file/nio_file_ingress_connector.html
