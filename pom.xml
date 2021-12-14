@@ -56,6 +56,6 @@
     <properties>
         <junit.version>4.13.1</junit.version>
         <commons-collections.version>3.2.2</commons-collections.version>
-        <log4j.version>2.13.3</log4j.version>
+        <log4j.version>2.16.0</log4j.version>
     </properties>
 </project>
